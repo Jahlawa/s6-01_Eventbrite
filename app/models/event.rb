@@ -2,7 +2,6 @@ class Event < ApplicationRecord
 	has_many :attendances
 	has_many :users, through: :attendances
 	belongs_to :organizer, class_name: "User"
-	belongs_to :attendee, class_name: "User"
 
 	validates :start_date, presence: true 
 	validate :is_start_date_past?
@@ -27,6 +26,5 @@ class Event < ApplicationRecord
 			errors.add(:duration, "must be positive and a multiple of 5, easy !")
 		end			
 	end
-
 
 end

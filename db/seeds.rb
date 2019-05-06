@@ -17,4 +17,5 @@ require 'faker'
 		description: Faker::Quote.yoda, 
 		encrypted_password: "dumdum"
 		)
+	puts "#{u.first_name} added!"
 end
