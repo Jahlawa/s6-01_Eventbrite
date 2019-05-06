@@ -8,4 +8,13 @@
 require 'faker'
 
 10.times do 
-	u = User.create
+
+	#  ----- Users -----
+	u = User.create(
+		last_name: Faker::Name.name,
+		first_name: Faker::Name.first_name,
+		email: ["johnneige@yopmail.com", "sansalarelou@yopmail.com", "brangrosnez@yopmail.com"].sample,
+		description: Faker::Quote.yoda, 
+		encrypted_password: "dumdum"
+		)
+end
