@@ -2,7 +2,12 @@
 
 Group : Robin d'Ercole, Thomas Guilmin
 
-## Eventrbrite
+Good bad joke of the day (from [Randomize](https://random-ize.com/bad-jokes/))
+
+Why do bees hum?   
+Because they dont know the words! 🎉   
+
+## Eventbrite-like
 
 Pour tester le projet, pensez à faire dans l'ordre :
 * `bundle install`
