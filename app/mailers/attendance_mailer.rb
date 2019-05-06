@@ -1,15 +1,16 @@
 class AttendanceMailer < ApplicationMailer
   default from: 'no-reply@monsite.fr'
- 
+  
   def participation_email(user, event)
-    #on récupère l'instance user pour ensuite pouvoir la passer à la view en @user
+    # We stock the parameter user in an instance variable
     @user = user 
     @event = event
 
-    #on définit une variable @url qu'on utilisera dans la view d’e-mail
+    # We stock the url to use it in the e-mail
     @url  = 'https://eventbrite-like-like.herokuapp.com/' 
 
-    # c'est cet appel à mail() qui permet d'envoyer l’e-mail en définissant destinataire et sujet.
+    # We use mail to send a mail to a specific address with 
+    # a custom subject
     mail(to: @user.email, subject: 'Vous participez à #{@event.title} !') 
   end
 end

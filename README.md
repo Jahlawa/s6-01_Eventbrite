@@ -1,24 +1,16 @@
-# README
+# s6-01_Eventbrite
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Group : Robin d'Ercole, Thomas Guilmin
 
-Things you may want to cover:
+## Eventrbrite
 
-* Ruby version
+Pour tester le projet, pensez à faire dans l'ordre :
+* `bundle install`
+* `rails db:drop`
+* `rails db:create`
+* `rails db:migrate`
+* `rails db:seed`
+* `rails server`
+* Vous pouvez ensuite aller sur [http://localhost:3000/](http://localhost:3000/)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Bonne journée ! 😊
